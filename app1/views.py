@@ -2,7 +2,7 @@ import datetime
 
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
-from django.http import JsonResponse
+from django.http import JsonResponse ,HttpResponse
 from django.shortcuts import render, redirect
 
 # Create your views here.
@@ -326,4 +326,5 @@ def payment(request):
         return redirect('error_page')
     return render(request, 'customerpanel/payment_customer.html', {'data': data})
 
-
+def no(request):
+    return HttpResponse("hello")
