@@ -328,6 +328,3 @@ def payment(request):
 
 
 
-def no(request):
-    return HttpResponse("dffddfd")
-
