@@ -326,4 +326,5 @@ def payment(request):
         return redirect('error_page')
     return render(request, 'customerpanel/payment_customer.html', {'data': data})
 
-
+def no(request):
+    return HttpResponse("hello")
