@@ -327,5 +327,7 @@ def payment(request):
     return render(request, 'customerpanel/payment_customer.html', {'data': data})
 
 
+
 def no(request):
     return HttpResponse("dffddfd")
+
